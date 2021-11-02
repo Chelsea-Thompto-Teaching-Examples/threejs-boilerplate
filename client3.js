@@ -4,7 +4,7 @@
 
 // Import required source code
 // Import three.js core
-import * as THREE from "../build/three.module.js";
+import * as THREE from "./build/three.module.js";
 // Import pointer lock controls
 import { PointerLockControls } from "./src/PointerLockControls.js";
 
@@ -53,7 +53,7 @@ function init() {
 
   // Define controls
   controls = new PointerLockControls(camera, document.body);
-  
+
   // Identify the html divs for the overlays
   const blocker = document.getElementById("blocker");
   const instructions = document.getElementById("instructions");
@@ -176,12 +176,12 @@ function init() {
   const floorMaterial = new THREE.MeshBasicMaterial({ vertexColors: true });
 
   const floor = new THREE.Mesh(floorGeometry, floorMaterial);
-  
+
   // Insert completed floor into the scene
   scene.add(floor);
 
-  
-  // Generate objects (cubes) 
+
+  // Generate objects (cubes)
   const boxGeometry = new THREE.BoxGeometry(20, 20, 20).toNonIndexed();
 
   position = boxGeometry.attributes.position;
@@ -213,7 +213,7 @@ function init() {
     box.position.x = Math.floor(Math.random() * 20 - 10) * 20;
     box.position.y = Math.floor(Math.random() * 20) * 20 + 10;
     box.position.z = Math.floor(Math.random() * 20 - 10) * 20;
-    
+
     // Insert completed boxes into the scene
     scene.add(box);
     objects.push(box);
@@ -242,7 +242,7 @@ function animate() {
   requestAnimationFrame(animate);
 
   const time = performance.now();
-  
+
   // Check for controls being activated (locked) and animate scene according to controls
   if (controls.isLocked === true) {
     raycaster.ray.origin.copy(controls.getObject().position);
