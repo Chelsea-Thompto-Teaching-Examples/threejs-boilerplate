@@ -16,7 +16,7 @@ const camera = new THREE.PerspectiveCamera(
 const renderer = new THREE.WebGLRenderer();
 renderer.setClearColor(0xdfdfdf);
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth / 2, window.innerHeight / 2);
+renderer.setSize(500, 500);
 document.body.appendChild(renderer.domElement);
 
 // Add a polygon to the scene
@@ -59,13 +59,3 @@ function render() {
 }
 // Call
 render();
-
-// Respond to Window Resizing
-window.addEventListener("resize", onWindowResize);
-
-// Handle Window Resizing
-function onWindowResize() {
-  renderer.setPixelRatio(window.devicePixelRatio);
-  renderer.setSize(window.innerWidth / 2, window.innerHeight / 2);
-  //render();
-}
