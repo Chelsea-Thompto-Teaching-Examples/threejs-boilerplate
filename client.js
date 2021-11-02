@@ -60,6 +60,9 @@ function render() {
 // Call
 render();
 
+// Respond to Window Resizing
+window.addEventListener("resize", onWindowResize);
+
 // Handle Window Resizing
 function onWindowResize() {
   renderer.setPixelRatio(window.devicePixelRatio);
