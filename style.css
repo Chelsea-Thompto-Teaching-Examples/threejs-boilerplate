@@ -1,0 +1,62 @@
+/* Style sheet from index.html and gtlf.html */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500;700&display=swap");
+
+html,
+body {
+  font-family: "Source Code Pro", monospace;
+  margin: auto;
+  display: block;
+  padding: 20px;
+  background: url(
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAMklEQVQYV2N8dvrxfwYk8Oz0EwZGZEGQgJSpDEIQJgDSBFYJE4CrPDPt+H+QFhgASQAAS1MjDyLYWWEAAAAASUVORK5CYII=
+    )repeat;
+}
+
+/*Canvas style is used for styling the three.js window*/
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  max-width: 800px;
+  border: 3px solid #6E2E99;
+  border-radius: 3px;
+}
+
+h1 {
+  font-style: bold;
+  color: #2E9939;
+  max-width: 75%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+h2 {
+  color: #2E5999;
+  max-width: 75%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+p {
+  width: 50%;
+  max-width: 75%;
+  font-weight: 500;
+  padding: 0px;
+  padding-left: 25%;
+  padding-bottom: 20px;
+  line-height: 150%;
+}
+
+p.mid {
+  padding-left: 0%;
+  text-align: center;
+  margin: auto;
+}
+
+a {
+  color: #735223;
+}

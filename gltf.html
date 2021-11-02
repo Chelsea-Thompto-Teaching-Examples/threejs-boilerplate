@@ -1,0 +1,45 @@
+<!-- -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Art 109 Three.js GLTF Model</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--Loading GLTF example script, as a module script, it will call all the other required sources from the script.-->
+    <script src="./client2.js" type="module"></script>
+  </head>
+  <body>
+    <h1>Art 109 Three.js GLTF Model Loader</h1>
+    <h2>
+      Overview
+    </h2>
+    <p>
+      This is an example of a three.js scene that makes use of a GLTF 3D model.
+      I chose this loader because GLTF/GLB models are the preferred format for
+      online 3D model display. <br />
+      <br />This example uses server side versions of the core Three.js, GLTF
+      Loader and Orbit Control scripts. Documentation for loading 3D models in
+      Three.js can be viewed at:<br />
+    </p>
+    <p class="mid">
+      <a
+        href="https://threejs.org/docs/#manual/en/introduction/Loading-3D-models"
+        >This Link</a
+      ><br /><br />
+    </p>
+    <!--client2.js selects the div with an id of "space" and places the scene within it.-->
+    <div id="space"></div>
+
+    <p>
+      <br />
+      To add models and textures you will need to add them to your site. In the
+      case of this example, I added the model to the assests section of Glitch.
+      For the scripts, I added them to the public folder of my server.
+      <br />
+    </p>
+    <p class="mid">
+      <a href="https://threejs-art109.glitch.me/">Back to main page</a>
+    </p>
+  </body>
+</html>
