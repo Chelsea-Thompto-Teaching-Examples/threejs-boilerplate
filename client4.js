@@ -1,8 +1,8 @@
 //for in class example on 11/3, currently doesn't work
 import * as THREE from '../build/three.module.js';
 
-import { AsciiEffect } from './jsm/effects/AsciiEffect.js';
-import { TrackballControls } from './jsm/controls/TrackballControls.js';
+import { AsciiEffect } from './src/AsciiEffect.js';
+import { TrackballControls } from './src/TrackballControls.js';
 
 let camera, controls, scene, renderer, effect;
 
@@ -47,12 +47,14 @@ function init() {
   renderer = new THREE.WebGLRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
 
-  effect = new AsciiEffect(renderer, ' .:-+*=%@#', {
-    invert: true
+  effect = new AsciiEffect(renderer, ' .?!', {
+    invert: false
   });
   effect.setSize(window.innerWidth, window.innerHeight);
-  effect.domElement.style.color = 'white';
-  effect.domElement.style.backgroundColor = 'black';
+  effect.domElement.style.color = 'cyan';
+  effect.domElement.style.backgroundColor = 'purple';
+
+ //.:-+*=%@#
 
   // Special case: append effect.domElement, instead of renderer.domElement.
   // AsciiEffect creates a custom domElement (a div container) where the ASCII elements are placed.

@@ -24,6 +24,12 @@ canvas {
   border-radius: 3px;
 }
 
+#space2 {
+  width: 525px;
+  height: 500px;
+  margin: auto;
+}
+
 h1 {
   font-style: bold;
   color: #2E9939;

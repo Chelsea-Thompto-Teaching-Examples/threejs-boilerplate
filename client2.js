@@ -25,7 +25,7 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setClearColor(0xdfdfdf);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth / 2, window.innerHeight / 2);
-
+//renderer.setSize(400, 800);
 // Add scene to gltf.html
 container.appendChild(renderer.domElement);
 
@@ -38,7 +38,7 @@ var mesh;
 // Load GLTF model, add material, and add it to the scene
 const loader = new GLTFLoader().load(
   "./assets/testing123fogv3.glb", // comment this line out and un comment the line below to swithc models
-  //"./assets/gourd_web.glb", <-- photogrammetery model
+  //"./assets/gourd_web.glb", //<-- photogrammetery model
   function(gltf) {
     // Scan loaded model for mesh and apply defined material if mesh is present
     gltf.scene.traverse(function(child) {
@@ -68,7 +68,7 @@ controls.target.set(0, 0, -0.2);
 controls.update();
 
 // Position our camera so we can see the shape
-camera.position.z = 4;
+camera.position.z = 4.5;
 
 // Add a directional light to the scene
 const directionalLight = new THREE.DirectionalLight(0xffffff, 0.9);
