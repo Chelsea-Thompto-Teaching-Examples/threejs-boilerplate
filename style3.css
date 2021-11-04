@@ -43,6 +43,16 @@ a {
   color: #dfdfdf;
 }
 
+input {
+  font-family: "Source Code Pro", monospace;
+  position: absolute;
+  z-index: 1;
+  background-color: #2E9939;
+  border: none;
+  color: #ffffff;
+  padding: 20px;
+}
+
 /*Styles for the overlay*/
 #blocker {
 

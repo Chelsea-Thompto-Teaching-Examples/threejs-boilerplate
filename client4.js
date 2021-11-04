@@ -1,5 +1,5 @@
 //for in class example on 11/3, currently doesn't work
-import * as THREE from '../build/three.module.js';
+import * as THREE from './build/three.module.js';
 
 import { AsciiEffect } from './src/AsciiEffect.js';
 import { TrackballControls } from './src/TrackballControls.js';
