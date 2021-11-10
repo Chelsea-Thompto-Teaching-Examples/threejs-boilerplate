@@ -1,6 +1,6 @@
 // Art 109 Three.js Demo Site
-// client3.js
-// A three.js scene which uses basic shapes to generate a scene which can be traversed with basic WASD and mouse controls, this scene is full screen with an overlay.
+// client7.js
+// A three.js scene which uses planes and texture loading to generate a scene with images which can be traversed with basic WASD and mouse controls, this scene is full screen with an overlay.
 
 // Import required source code
 // Import three.js core
