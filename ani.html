@@ -1,0 +1,53 @@
+<!-- -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Art 109 Three.js GLTF Model</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!--Loading GLTF example script, as a module script, it will call all the other required sources from the script.-->
+    <script src="./client6.js" type="module"></script>
+  </head>
+  <body>
+    <h1>Art 109 Three.js Animation Example</h1>
+    <h2>
+      Overview
+    </h2>
+    <p>
+      This is an example of a three.js scene that makes use of 2 glTF 3D models. The models are the same except that the green one was preanimated and the pink/purple one was animated manually in three.js. <br />
+      <br />The preanimated model was animated in Blender and exported with the animation data. The static model was animated by changing it's scale over time in three.js.<br />
+      <br />This example also makes use of the three.js FontLoader to add text in the space.
+      <br />This example uses server hosted versions of the core Three.js, glTF
+      Loader, Orbit Control, and Font Loader scripts. Documentation these can be viewed at:<br />
+    </p>
+    <p class="mid">
+      <a
+        href="https://threejs.org/docs/#manual/en/introduction/Loading-3D-models"
+        >Loading 3D Models</a
+      ><br /><br />
+      <a
+        href="https://threejs.org/docs/#examples/en/controls/OrbitControls"
+        >Orbit Controls</a
+      ><br /><br />
+      <a
+        href="https://threejs.org/docs/#examples/en/loaders/FontLoader"
+        >Font Loader</a
+      ><br /><br />
+    </p>
+    <!--client2.js selects the div with an id of "space" and places the scene within it.-->
+    <div id="space"></div>
+
+    <p>
+      <br />
+      To add models and textures you will need to add them to your site. In the
+      case of this example, I added the model to the assests folder, the scene
+      script to the root of my server, and the add-on scripts (glTF loader and etc.)
+      to the "src" folder.
+      <br />
+    </p>
+    <p class="mid">
+      <a href="./">Back to main page</a>
+    </p>
+  </body>
+</html>
