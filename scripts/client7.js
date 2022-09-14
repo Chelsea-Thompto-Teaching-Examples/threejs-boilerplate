@@ -4,11 +4,11 @@
 
 // Import required source code
 // Import three.js core
-import * as THREE from "./build/three.module.js";
+import * as THREE from "../build/three.module.js";
 // Import pointer lock controls
 import {
   PointerLockControls
-} from "./src/PointerLockControls.js";
+} from "../src/PointerLockControls.js";
 
 // Establish variables
 let camera, scene, renderer, controls, material;
@@ -187,7 +187,7 @@ function init() {
 
   // First Image (red and purple glitch map)
   // Load image as texture
-  const texture = new THREE.TextureLoader().load( './assets/glitch_map.jpg' );
+  const texture = new THREE.TextureLoader().load( '../../assets/glitch_map.jpg' );
   // Immediately use the texture for material creation
   const material = new THREE.MeshBasicMaterial( { map: texture, side: THREE.DoubleSide } );
   // Create plane geometry
@@ -201,7 +201,7 @@ function init() {
 
   // Second Image (Text with image and white background)
   // Load image as texture
-  const texture2 = new THREE.TextureLoader().load( './assets/bouy.jpg' );
+  const texture2 = new THREE.TextureLoader().load( '../../assets/bouy.jpg' );
   // immediately use the texture for material creation
   const material2 = new THREE.MeshBasicMaterial( { map: texture2, side: THREE.DoubleSide } );
   // Create plane geometry

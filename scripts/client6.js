@@ -12,18 +12,18 @@
 
 // Import required source code
 // Import three.js core
-import * as THREE from "./build/three.module.js";
+import * as THREE from "../build/three.module.js";
 
 // Import add-ons for glTF models, orbit controls, and font loader
 import {
   OrbitControls
-} from "./src/OrbitControls.js";
+} from "../src/OrbitControls.js";
 import {
   GLTFLoader
-} from "./src/GLTFLoader.js";
+} from "../src/GLTFLoader.js";
 import {
   FontLoader
-} from "./src/FontLoader.js"
+} from "../src/FontLoader.js"
 
 let container, scene, camera, renderer, mesh, mesh2, mixer, controls, clock;
 
@@ -63,7 +63,7 @@ function init() {
 
   // Load preanimated model, add material, and add it to the scene
   const loader = new GLTFLoader().load(
-    "./assets/blend_def_ani.glb",
+    "../../assets/blend_def_ani.glb",
     function(gltf) {
       gltf.scene.traverse(function(child) {
         if (child.isMesh) {
@@ -97,7 +97,7 @@ function init() {
 
   // Load static model, add material, and add it to the scene
   const loader2 = new GLTFLoader().load(
-    "./assets/blend_def.glb",
+    "../../assets/blend_def.glb",
     function(gltf) {
       // Scan loaded model for mesh and apply defined material if mesh is present
       gltf.scene.traverse(function(child) {
@@ -139,7 +139,7 @@ function init() {
 
  // Add Text under models
  const loader3 = new FontLoader();
-				loader3.load( './assets/helvetiker_regular.typeface.json', function ( font ) {
+				loader3.load( '../../assets/helvetiker_regular.typeface.json', function ( font ) {
           // Define font color
 					const color = 0x2E5999;
           // Define font material

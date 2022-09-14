@@ -6,16 +6,16 @@
 
 // Import required source code
 // Import three.js core
-import * as THREE from "./build/three.module.js";
+import * as THREE from "../build/three.module.js";
 
 // Import add-on for GLTF models
-import { GLTFLoader } from "./src/GLTFLoader.js";
+import { GLTFLoader } from "../src/GLTFLoader.js";
 // Note that we are using the TrackballControls so the
 // OrbitControls from client2.js are not loaded.
 
 // Import AsciiEffect and TrackballControls
-import { AsciiEffect } from './src/AsciiEffect.js';
-import { TrackballControls } from './src/TrackballControls.js';
+import { AsciiEffect } from '../src/AsciiEffect.js';
+import { TrackballControls } from '../src/TrackballControls.js';
 
 // Declaring variables for the scene
 let camera, controls, container, scene, renderer, effect, mesh;
@@ -52,7 +52,7 @@ function init() {
 
   // Load GLTF model, add material, and add it to the scene
   const loader = new GLTFLoader().load(
-    "./assets/testing123fogv3.glb",
+    "../../assets/testing123fogv3.glb",
     function(gltf) {
       // Scan loaded model for mesh and apply defined material if mesh is present
       gltf.scene.traverse(function(child) {
