@@ -2,7 +2,7 @@
 // client.js
 // A basic three.js scene which displays and rotates a polygon with a wireframe
 
-// Extract globals from extrenal script
+// Extract globals from external script
 const { THREE } = window;
 
 // Create a scene
@@ -10,7 +10,6 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
   50,
   500 / 500,
-  //window.innerWidth / window.innerHeight,
   0.1,
   1000
 );
