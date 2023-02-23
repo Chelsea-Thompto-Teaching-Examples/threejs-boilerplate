@@ -9,8 +9,12 @@ This examples cover some of the basic uses of three.js geared towards artsists i
 ## Live Site
 
 The live site (hosted on GitHub Pages) can be viewed here:
-[https://chelsea-thompto-teaching-examples.github.io/threejs-nonode-boilerplate/](https://chelsea-thompto-teaching-examples.github.io/threejs-nonode-boilerplate/)
+[https://chelsea-thompto-teaching-examples.github.io/threejs-boilerplate/](https://chelsea-thompto-teaching-examples.github.io/threejs-boilerplate/)
 
 ## Usage
 
-These examples were created for use in my Art 109 class, part of [CADRE](https://cadre.sjsu.edu/) San Jose State University. That are hosted here publically for anyone to use or build off of.
+These examples were created for use in my Art 109 class, part of [CADRE](https://cadre.sjsu.edu/) San Jose State University. That are hosted here publically for anyone to use or build off of. 
+
+This template was rewritten as part of a larger project, byhand.website. This project is an open guide to creating websites by hand and can be explored here:
+[https://byhand.website](https://byhand.website)
+
